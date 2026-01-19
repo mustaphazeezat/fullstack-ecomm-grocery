@@ -1,0 +1,10 @@
+# Local environment variables
+/frontend/.env
+/backend/.env
+/backend/model/data
+
+# local dev files or OS noise
+.DS_Store
+__pycache__/
+node_modules/
+*.pyc
