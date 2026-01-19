@@ -14,13 +14,13 @@ metadata = MetaData()
 # Define movies table (optional if already created)
 products_table = Table(
     'products', metadata,
-    Column('product_id', Integer, unique=True, nullable=False),
+    Column('product_id', Integer, primary_key=True, index=True),
     Column('product_name', String, nullable=False),
     Column('name', String, nullable=False),
     Column('category_id', Integer, nullable=False),
     Column('price', String, nullable=False),
     Column('description', String, nullable=False),
-    Column('image_url', String, nullable=False), 
+    Column('image_url', String, nullable=False)
 )
 
 # Read CSV
