@@ -9,7 +9,7 @@ import math
 
 class Product(Base):
     __tablename__ = "products"
-    product_id = Column(Integer, primary_key=True, unique=True, nullable=False)
+    product_id = Column(Integer, primary_key=True, nullable=False)
     product_name = Column(String, nullable=False)
     name = Column(String, nullable=False)
     category_id = Column(Integer, nullable=False)
